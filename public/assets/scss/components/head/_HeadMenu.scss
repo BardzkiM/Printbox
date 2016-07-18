@@ -1,0 +1,37 @@
+.head-menu {
+float: left;
+  .menu-item {
+    height: 100%;
+    padding: 7px 10px;
+    float: left;
+    position:relative;
+
+    &::before {
+      content: '';
+      height: 50%;
+      top: 25%;
+      left: 0;
+      display: block;
+      position: absolute;
+      border-left: 1px solid black;
+    }
+
+
+    &:last-child {
+      &::after {
+        content: '';
+        height: 50%;
+        top: 25%;
+        right: 0;
+        display: block;
+        position: absolute;
+        border-left: 1px solid black;
+      }
+    }
+    &.dropdown {
+      min-height: 32px;
+      padding: 0 10px;
+      min-width: 100px;
+    }
+  }
+}

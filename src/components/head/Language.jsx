@@ -16,7 +16,7 @@ export default class Language extends React.Component {
 
 	show() {
 		this.state = {listVisible: true};
-		document.addEventListener("click", this.hide);
+			document.addEventListener("click", this.hide);
 	}
 
 	hide() {

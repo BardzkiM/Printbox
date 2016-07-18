@@ -364,6 +364,106 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.col-1 {
+  width: calc(100% / 12); }
+
+.col-2 {
+  width: calc(100% / 12 * 2); }
+
+.col-3 {
+  width: calc(100% / 12 * 3); }
+
+.col-4 {
+  width: calc(100% / 12 * 4); }
+
+.col-5 {
+  width: calc(100% / 12 * 5); }
+
+.col-6 {
+  width: calc(100% / 12 * 6); }
+
+.col-7 {
+  width: calc(100% / 12 * 7); }
+
+.col-8 {
+  width: calc(100% / 12 * 8); }
+
+.col-9 {
+  width: calc(100% / 12 * 9); }
+
+.col-10 {
+  width: calc(100% / 12 * 10); }
+
+.col-11 {
+  width: calc(100% / 12 * 11); }
+
+.col-12 {
+  width: calc(100% / 12 * 12); }
+
+[class*=" col-"],
+[class^="col-"] {
+  float: left; }
+
 .test {
   background-color: #2aabd2;
   font-size: 25px; }
+
+.dropdown-list {
+  position: absolute;
+  z-index: 9999;
+  list-style-type: none;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+  top: 2px; }
+  .dropdown-list:hover {
+    cursor: pointer; }
+  .dropdown-list .tab {
+    padding: 5px 10px;
+    text-align: right;
+    display: none; }
+    .dropdown-list .tab:hover {
+      background-color: #00b359; }
+    .dropdown-list .tab:last-child {
+      border-bottom: 0; }
+    .dropdown-list .tab.is-active {
+      display: flex; }
+    .dropdown-list .tab.is-expanded {
+      display: flex; }
+      .dropdown-list .tab.is-expanded.is-selected {
+        display: none; }
+
+.head-menu {
+  float: left; }
+  .head-menu .menu-item {
+    height: 100%;
+    padding: 7px 10px;
+    float: left;
+    position: relative; }
+    .head-menu .menu-item::before {
+      content: '';
+      height: 50%;
+      top: 25%;
+      left: 0;
+      display: block;
+      position: absolute;
+      border-left: 1px solid black; }
+    .head-menu .menu-item:last-child::after {
+      content: '';
+      height: 50%;
+      top: 25%;
+      right: 0;
+      display: block;
+      position: absolute;
+      border-left: 1px solid black; }
+    .head-menu .menu-item.dropdown {
+      min-height: 32px;
+      padding: 0 10px;
+      min-width: 100px; }
+
+.head {
+  padding: 15px;
+  width: 100%; }
+  .head .logo {
+    margin: 0;
+    padding: 0; }

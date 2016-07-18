@@ -11,8 +11,7 @@ export class App extends React.Component {
 		return (
 			<div className="asd">
 				<Head />
-				<Hello title="sample props"/>
-				<Hello title="another sample props"/>
+
 			</div>
 		);
 	}

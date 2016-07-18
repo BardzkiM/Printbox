@@ -11,7 +11,7 @@ export default class Hello extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Hello !!!</h1>
+				<h1>Hello !!!{this.props.title}</h1>
 				<div class="test">world</div>
 				<button onClick={this.handleButton}>button</button>
 				<i className="icon-basket">'\E800'</i><br/>
