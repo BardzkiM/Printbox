@@ -404,9 +404,88 @@ textarea {
 [class^="col-"] {
   float: left; }
 
-.test {
-  background-color: #2aabd2;
-  font-size: 25px; }
+html {
+  font-family: Calibri; }
+
+input[type=checkbox],
+input[type=radio] {
+  display: none; }
+
+input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  border: 1px solid black; }
+
+input[type=checkbox]:checked + label:before {
+  content: '\F14A';
+  font-family: 'chart';
+  color: #008580;
+  text-align: center;
+  margin-bottom: 4px;
+  border: 0; }
+
+input[type=radio] + label:before {
+  content: '\F10C';
+  font-family: 'chart';
+  left: 0;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  bottom: 2px; }
+
+input[type=radio]:checked + label:before {
+  content: '\F192';
+  color: #56c47a; }
+
+.full-star {
+  color: #fdd201; }
+
+.empty-star {
+  color: #dadada; }
+
+.full-heart {
+  color: #e53935; }
+
+.empty-heart {
+  color: #dadada; }
+
+.content {
+  margin-top: 40px; }
+  .content .filters {
+    width: 220px; }
+  .content .right-content {
+    width: calc( 100% - 250px);
+    border-left: 1px solid #a8a8a8; }
+
+.product-list-container {
+  width: auto;
+  padding: 0 15px; }
+  .product-list-container .item {
+    width: 25%;
+    display: inline-block; }
+
+.product-list-item {
+  width: auto;
+  padding: 20px 30px; }
+  .product-list-item:hover {
+    box-shadow: inset 0 0 0 3px #56c47a; }
+  .product-list-item .item-image {
+    width: 100%; }
+    .product-list-item .item-image img {
+      max-width: 100%; }
+  .product-list-item .stars {
+    display: inline-block; }
+  .product-list-item .heart {
+    display: inline-block;
+    float: right; }
+  .product-list-item .title {
+    font-weight: bold;
+    font-size: 120%; }
 
 .dropdown-list {
   position: absolute;
@@ -421,9 +500,10 @@ textarea {
   .dropdown-list .tab {
     padding: 5px 10px;
     text-align: right;
-    display: none; }
+    display: none;
+    background-color: white; }
     .dropdown-list .tab:hover {
-      background-color: #00b359; }
+      background-color: #56c47a; }
     .dropdown-list .tab:last-child {
       border-bottom: 0; }
     .dropdown-list .tab.is-active {
@@ -463,7 +543,145 @@ textarea {
 
 .head {
   padding: 15px;
-  width: 100%; }
+  width: auto;
+  float: none;
+  margin-bottom: 30px; }
   .head .logo {
     margin: 0;
     padding: 0; }
+
+.menu {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+  .menu .menu-item {
+    display: inline-block;
+    padding: 10px 20px; }
+    .menu .menu-item a {
+      color: black;
+      text-decoration: none; }
+    .menu .menu-item.is-active a, .menu .menu-item:hover a {
+      color: #56c47a;
+      font-weight: bold; }
+
+.filter-container {
+  padding: 10px; }
+  .filter-container .base-filter-component {
+    position: relative;
+    width: 100%; }
+    .filter-container .base-filter-component .filter-title {
+      color: #a8a8a8;
+      font-size: 20px; }
+    .filter-container .base-filter-component .icon-element {
+      position: absolute;
+      font-size: 8px;
+      right: 0;
+      top: 4px;
+      color: #56c47a; }
+
+.orientation-indicator {
+  font-size: 14px;
+  text-align: center; }
+  .orientation-indicator .horizontal-indicator .horizontal-checkbox {
+    width: 45px;
+    height: 30px; }
+  .orientation-indicator .vertical-indicator .vertical-checkbox {
+    width: 30px;
+    height: 40px; }
+  .orientation-indicator .indicator {
+    display: inline-block;
+    width: 50%; }
+    .orientation-indicator .indicator .text {
+      padding: 10px 0; }
+    .orientation-indicator .indicator .checkbox {
+      position: relative;
+      margin: auto;
+      background-color: #dadada;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+      .orientation-indicator .indicator .checkbox i {
+        display: none;
+        color: #FFF; }
+    .orientation-indicator .indicator.is-active .checkbox {
+      background: #56c47a; }
+      .orientation-indicator .indicator.is-active .checkbox i {
+        display: block;
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 9px); }
+    .orientation-indicator .indicator.is-active .text {
+      color: #56c47a; }
+
+.checkbox-list-filter-indicator .item .text {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  width: calc(60% - 15px); }
+
+.checkbox-list-filter-indicator .item .number {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  color: #a8a8a8; }
+
+.rating-indicator .item .radio-input {
+  display: none; }
+
+.rating-indicator .item .stars {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  width: calc(80% - 11px); }
+  .rating-indicator .item .stars .icon-star {
+    display: inline-block;
+    font-size: 14px; }
+
+.rating-indicator .item .number {
+  display: inline-block;
+  width: 20%;
+  text-align: right; }
+
+.color-picker .or {
+  color: #a8a8a8; }
+
+.color-picker .upload-logo .upload-button {
+  padding: 5px 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #a8a8a8; }
+
+.color-picker .color-indicator {
+  margin: 0;
+  padding: 0; }
+  .color-picker .color-indicator .color-item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0; }
+    .color-picker .color-indicator .color-item:last-child {
+      position: relative; }
+      .color-picker .color-indicator .color-item:last-child::before {
+        position: absolute;
+        font-size: 25px;
+        font-family: 'chart';
+        top: calc(50% - 12.5px);
+        right: calc(50% - 12.5px);
+        content: '\E80B'; }
+    .color-picker .color-indicator .color-item.is-active {
+      width: 34px;
+      height: 34px;
+      margin: 3px;
+      position: relative; }
+      .color-picker .color-indicator .color-item.is-active::before {
+        position: absolute;
+        content: '\E80D';
+        font-family: 'chart';
+        font-size: 30px;
+        left: calc(50% - 10px);
+        top: calc(50% - 15px);
+        color: #FFF; }
