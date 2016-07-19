@@ -1,0 +1,17 @@
+.checkbox-list-filter-indicator {
+  .item {
+    .text {
+      position: relative;
+      display: inline-block;
+      padding-left: 15px;
+      width: calc(60% - 15px);
+    }
+
+    .number {
+      display: inline-block;
+      width: 40%;
+      text-align: right;
+      color: $color-grey;
+    }
+  }
+}

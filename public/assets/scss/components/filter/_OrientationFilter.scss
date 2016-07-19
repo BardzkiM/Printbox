@@ -1,0 +1,58 @@
+.orientation-indicator {
+  font-size: 14px;
+  text-align: center;
+
+  .horizontal-indicator {
+    .horizontal-checkbox {
+      width: 45px;
+      height: 30px;
+    }
+  }
+
+  .vertical-indicator {
+    .vertical-checkbox {
+      width: 30px;
+      height: 40px;
+    }
+  }
+
+  .indicator {
+    display: inline-block;
+    width: 50%;
+
+    .text {
+      padding: 10px 0;
+    }
+
+    .checkbox {
+      position: relative;
+      margin: auto;
+      background-color: #dadada;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+
+      i {
+        display: none;
+        color: #FFF;
+      }
+    }
+
+    &.is-active {
+      .checkbox {
+        background: $color-hover;
+
+        i {
+          display: block;
+          position: absolute;
+          top: calc(50% - 9px);
+          left: calc(50% - 9px);
+        }
+      }
+
+      .text {
+        color: $color-hover;
+      }
+    }
+  }
+}
