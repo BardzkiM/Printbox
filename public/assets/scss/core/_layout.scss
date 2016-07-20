@@ -55,6 +55,7 @@ html {
   font-family: Calibri;
   max-width: 100%;
   overflow-x: hidden;
+  color: $
 }
 
 input[type=checkbox],
@@ -70,7 +71,8 @@ input[type=checkbox] + label:before {
   position: absolute;
   left: 0;
   bottom: 4px;
-  border: 1px solid black;
+  border: 1px solid $color-grey;
+
 }
 
 input[type=checkbox]:checked + label:before {
@@ -87,7 +89,7 @@ input[type=radio] + label:before {
   font-family: 'chart';
   left: 0;
   position: absolute;
-  color: #000;
+  color: $color-grey;
   text-align: center;
   bottom: 2px;
 }
@@ -148,4 +150,3 @@ input[type=radio]:checked + label:before {
     color: $color-grey;
   }
 }
-
