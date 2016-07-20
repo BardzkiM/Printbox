@@ -709,6 +709,8 @@ input[type=radio]:checked + label:before {
       right: 0;
       top: 4px;
       color: #56c47a; }
+      .filter-container .base-filter-component .icon-element:hover {
+        cursor: pointer; }
 
 .orientation-indicator {
   font-size: 14px;
@@ -749,6 +751,8 @@ input[type=radio]:checked + label:before {
   display: inline-block;
   padding-left: 15px;
   width: calc(60% - 15px); }
+  .checkbox-list-filter-indicator .item .text:hover {
+    cursor: pointer; }
 .checkbox-list-filter-indicator .item .number {
   display: inline-block;
   width: 40%;

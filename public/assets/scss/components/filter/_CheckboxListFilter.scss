@@ -5,6 +5,10 @@
       display: inline-block;
       padding-left: 15px;
       width: calc(60% - 15px);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .number {
