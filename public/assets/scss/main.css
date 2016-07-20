@@ -1,82 +1,862 @@
-/*
-Error: Invalid CSS after "  color: ": expected expression (e.g. 1px, bold), was "$"
-        on line 58 of core/_layout.scss
-        from line 6 of main.scss
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
-53: 
-54: html {
-55:   font-family: Calibri;
-56:   max-width: 100%;
-57:   overflow-x: hidden;
-58:   color: $
-59: }
-60: 
-61: input[type=checkbox],
-62: input[type=radio] {
-63:   display: none;
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
 
-Backtrace:
-core/_layout.scss:58
-main.scss:6
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
-C:/Program Files/Ruby23-x64/bin/scss:23:in `load'
-C:/Program Files/Ruby23-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  color: \": expected expression (e.g. 1px, bold), was \"$\"\A         on line 58 of core/_layout.scss\A         from line 6 of main.scss\A \A 53: \A 54: html {\A 55:   font-family: Calibri;\A 56:   max-width: 100%;\A 57:   overflow-x: hidden;\A 58:   color: $\A 59: }\A 60: \A 61: input[type=checkbox],\A 62: input[type=radio] {\A 63:   display: none;"; }
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+.col-1 {
+  width: calc(100% / 12); }
+
+.col-2 {
+  width: calc(100% / 12 * 2); }
+
+.col-3 {
+  width: calc(100% / 12 * 3); }
+
+.col-4 {
+  width: calc(100% / 12 * 4); }
+
+.col-5 {
+  width: calc(100% / 12 * 5); }
+
+.col-6 {
+  width: calc(100% / 12 * 6); }
+
+.col-7 {
+  width: calc(100% / 12 * 7); }
+
+.col-8 {
+  width: calc(100% / 12 * 8); }
+
+.col-9 {
+  width: calc(100% / 12 * 9); }
+
+.col-10 {
+  width: calc(100% / 12 * 10); }
+
+.col-11 {
+  width: calc(100% / 12 * 11); }
+
+.col-12 {
+  width: calc(100% / 12 * 12); }
+
+[class*=" col-"],
+[class^="col-"] {
+  float: left; }
+
+html {
+  font-family: Calibri;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+input[type=checkbox],
+input[type=radio] {
+  display: none; }
+
+input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  border: 1px solid #a8a8a8; }
+
+input[type=checkbox]:checked + label:before {
+  content: '\F14A';
+  font-family: 'chart';
+  color: #56c47a;
+  text-align: center;
+  margin-bottom: 4px;
+  border: 0; }
+
+input[type=radio] + label:before {
+  content: '\F10C';
+  font-family: 'chart';
+  left: 0;
+  position: absolute;
+  color: #a8a8a8;
+  text-align: center;
+  bottom: 2px; }
+
+input[type=radio]:checked + label:before {
+  content: '\F192';
+  color: #56c47a; }
+
+.full-star {
+  color: #FFCF03; }
+
+.empty-star {
+  color: #dadada; }
+
+.full-heart {
+  color: #e53935; }
+
+.empty-heart {
+  color: #dadada; }
+
+.filters {
+  height: 100%; }
+
+.content {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .content .filters {
+    width: 220px; }
+  .content .right-content {
+    width: calc(100% - 250px);
+    border-left: 1px solid #ebebeb; }
+
+.about-app {
+  clear: both;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.footer {
+  margin-top: 20px;
+  height: auto;
+  border-top: 1px solid #ebebeb; }
+  .footer .footer-text {
+    text-align: center;
+    padding: 10px;
+    color: #a8a8a8; }
+
+.product-list-container {
+  width: auto;
+  padding: 0 15px; }
+  .product-list-container .item {
+    width: 25%;
+    display: inline-block; }
+
+.product-list-item {
+  width: auto;
+  padding: 20px 30px; }
+  .product-list-item:hover {
+    box-shadow: inset 0 0 0 3px #56c47a;
+    cursor: pointer; }
+  .product-list-item .item-image {
+    width: 100%; }
+    .product-list-item .item-image img {
+      max-width: 100%; }
+  .product-list-item .stars {
+    display: inline-block; }
+  .product-list-item .heart {
+    display: inline-block;
+    float: right; }
+  .product-list-item .title {
+    font-weight: bold;
+    font-size: 120%; }
+
+.showing-filter {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px; }
+  .showing-filter .item {
+    position: relative;
+    font-size: 15px;
+    margin: 0 2px;
+    border: 1px solid #a8a8a8;
+    padding: 0 7px;
+    padding-right: 20px;
+    display: inline-block;
+    color: #a8a8a8;
+    width: auto; }
+    .showing-filter .item:hover {
+      cursor: pointer; }
+    .showing-filter .item .icon {
+      padding-left: 5px;
+      position: absolute;
+      bottom: 4px;
+      display: inline-block;
+      color: #000;
+      font-size: 8px; }
+
+.product-menu {
+  position: relative; }
+  .product-menu .filter-options {
+    margin: 0 10px;
+    padding-left: 35px; }
+    .product-menu .filter-options .search-results-title {
+      margin-bottom: 10px; }
+      .product-menu .filter-options .search-results-title .search-filters-number {
+        display: inline-block;
+        margin-left: 5px;
+        color: #a8a8a8; }
+    .product-menu .filter-options .showing-filters-title {
+      margin-bottom: 10px; }
+  .product-menu .show-options {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .product-menu .show-options .icon {
+      position: relative;
+      top: 10px;
+      padding: 0px 2px;
+      left: 135px;
+      width: 100%;
+      height: 100%;
+      color: #a8a8a8; }
+      .product-menu .show-options .icon:hover {
+        color: #56c47a;
+        cursor: pointer; }
+
+.dropdown-list {
+  position: absolute;
+  z-index: 9999;
+  list-style-type: none;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+  top: 2px; }
+  .dropdown-list:hover {
+    cursor: pointer; }
+  .dropdown-list .tab {
+    padding: 5px 10px;
+    text-align: right;
+    display: none;
+    background-color: white; }
+    .dropdown-list .tab:last-child {
+      border-bottom: 0; }
+    .dropdown-list .tab.is-active {
+      display: flex; }
+    .dropdown-list .tab.is-expanded {
+      display: flex;
+      color: #000; }
+      .dropdown-list .tab.is-expanded:hover {
+        background-color: #56c47a; }
+      .dropdown-list .tab.is-expanded.is-selected {
+        display: none; }
+
+.head-menu {
+  float: left; }
+  .head-menu .menu-item {
+    height: 100%;
+    padding: 7px 10px;
+    float: left;
+    position: relative; }
+    .head-menu .menu-item:hover {
+      cursor: pointer;
+      color: #56c47a; }
+    .head-menu .menu-item::before {
+      content: '';
+      height: 50%;
+      top: 25%;
+      left: 0;
+      display: block;
+      position: absolute;
+      border-left: 1px solid #ebebeb; }
+    .head-menu .menu-item:last-child::after {
+      content: '';
+      height: 50%;
+      top: 25%;
+      right: 0;
+      display: block;
+      position: absolute;
+      border-left: 1px solid #ebebeb; }
+    .head-menu .menu-item.dropdown {
+      min-height: 32px;
+      padding: 0 10px;
+      min-width: 100px; }
+
+.head {
+  padding: 15px;
+  width: auto;
+  float: none;
+  margin-bottom: 30px; }
+  .head .logo {
+    margin: 0;
+    padding: 0; }
+  .head:hover {
+    cursor: pointer; }
+
+.menu {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb; }
+  .menu .menu-item {
+    display: inline-block;
+    padding: 10px 20px; }
+    .menu .menu-item a {
+      color: #000;
+      text-decoration: none; }
+    .menu .menu-item.is-active a, .menu .menu-item:hover a {
+      color: #56c47a;
+      font-weight: bold; }
+
+.menu-bottom-main {
+  width: auto;
+  height: auto;
+  float: none;
+  overflow: hidden;
+  margin: 0 15px; }
+  .menu-bottom-main .bottom-submenu {
+    display: inline-block;
+    height: auto; }
+  .menu-bottom-main .newsletter {
+    display: inline-block;
+    width: 190px;
+    height: auto; }
+    .menu-bottom-main .newsletter .newsletter-title {
+      font-size: 20px; }
+    .menu-bottom-main .newsletter .newsletter-content {
+      color: #a8a8a8;
+      font-size: 16px; }
+    .menu-bottom-main .newsletter .newsletter-input {
+      width: 180px;
+      margin: 5px;
+      margin-top: 15px;
+      padding: 5px;
+      display: inline-block;
+      border: 1px solid #a8a8a8;
+      border-radius: 4px;
+      box-sizing: border-box; }
+    .menu-bottom-main .newsletter .newsletter-subscribe {
+      width: 180px;
+      margin: 5px;
+      padding: 5px;
+      background: #56c47a;
+      color: #FFF;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+
+.bottom-menu {
+  display: inline-block;
+  width: auto; }
+  .bottom-menu .submenu-title {
+    font-size: 20px; }
+  .bottom-menu .submenu-item {
+    color: #a8a8a8;
+    font-size: 16px; }
+    .bottom-menu .submenu-item:hover {
+      cursor: pointer; }
+
+.filter-container {
+  padding: 10px; }
+  .filter-container .base-filter-component {
+    position: relative;
+    width: 100%; }
+    .filter-container .base-filter-component .filter-title {
+      color: #a8a8a8;
+      font-size: 20px; }
+    .filter-container .base-filter-component .icon-element {
+      position: absolute;
+      font-size: 8px;
+      right: 0;
+      top: 4px;
+      color: #56c47a; }
+      .filter-container .base-filter-component .icon-element:hover {
+        cursor: pointer; }
+
+.orientation-indicator {
+  font-size: 14px;
+  text-align: center; }
+  .orientation-indicator .horizontal-indicator .horizontal-checkbox {
+    width: 45px;
+    height: 30px; }
+  .orientation-indicator .vertical-indicator .vertical-checkbox {
+    width: 30px;
+    height: 40px; }
+  .orientation-indicator .indicator {
+    display: inline-block;
+    width: 50%; }
+    .orientation-indicator .indicator .text {
+      padding: 10px 0; }
+    .orientation-indicator .indicator .checkbox {
+      position: relative;
+      margin: auto;
+      background-color: #dadada;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+      .orientation-indicator .indicator .checkbox i {
+        display: none;
+        color: #FFF; }
+    .orientation-indicator .indicator.is-active .checkbox {
+      background: #56c47a; }
+      .orientation-indicator .indicator.is-active .checkbox i {
+        display: block;
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 9px); }
+    .orientation-indicator .indicator.is-active .text {
+      color: #56c47a; }
+
+.checkbox-list-filter-indicator .item .text {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  width: calc(60% - 15px); }
+  .checkbox-list-filter-indicator .item .text:hover {
+    cursor: pointer; }
+.checkbox-list-filter-indicator .item .number {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  color: #a8a8a8; }
+
+.rating-indicator .item .radio-input {
+  display: none; }
+.rating-indicator .item .stars {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  width: calc(80% - 11px); }
+  .rating-indicator .item .stars .icon-star {
+    display: inline-block;
+    font-size: 14px; }
+  .rating-indicator .item .stars:hover {
+    cursor: pointer; }
+.rating-indicator .item .number {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  color: #a8a8a8; }
+
+.color-picker .or {
+  color: #a8a8a8; }
+.color-picker .upload-logo .upload-button {
+  padding: 5px 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #a8a8a8; }
+  .color-picker .upload-logo .upload-button:hover {
+    cursor: pointer; }
+.color-picker .color-indicator {
+  margin: 0;
+  padding: 0; }
+  .color-picker .color-indicator .color-item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0; }
+    .color-picker .color-indicator .color-item:hover {
+      cursor: pointer; }
+    .color-picker .color-indicator .color-item:last-child {
+      position: relative; }
+      .color-picker .color-indicator .color-item:last-child::before {
+        position: absolute;
+        font-size: 25px;
+        font-family: 'chart';
+        top: calc(50% - 12.5px);
+        right: calc(50% - 12.5px);
+        content: '\E80B'; }
+    .color-picker .color-indicator .color-item.is-active {
+      width: 34px;
+      height: 34px;
+      margin: 3px;
+      position: relative; }
+      .color-picker .color-indicator .color-item.is-active::before {
+        position: absolute;
+        content: '\E80D';
+        font-family: 'chart';
+        font-size: 30px;
+        left: calc(50% - 10px);
+        top: calc(50% - 15px);
+        color: #FFF; }
+
+.title {
+  margin: 0 10px; }
+
+.about {
+  width: auto;
+  height: auto;
+  float: none;
+  padding-right: 65px;
+  padding-left: 15px;
+  overflow: hidden;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 40px; }
+  .about .logo {
+    text-align: left;
+    height: auto;
+    display: inline-block;
+    margin: 20px 0; }
+    .about .logo:hover {
+      cursor: pointer; }
+  .about .content-app {
+    text-align: center;
+    height: auto;
+    display: inline-block;
+    margin: 21px 0; }
+    .about .content-app .content-heading {
+      text-align: left; }
+    .about .content-app .content-description {
+      color: #a8a8a8;
+      text-align: left; }
+  .about .media {
+    height: auto;
+    text-align: right;
+    display: inline-block;
+    margin: 30px 0;
+    color: #a8a8a8; }
+    .about .media:hover {
+      cursor: pointer; }

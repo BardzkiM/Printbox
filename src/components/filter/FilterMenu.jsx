@@ -55,6 +55,7 @@ export default class FilterMenu extends React.Component {
 
 		return(
 			<div>
+				<div className="title"><h2>Narrow results</h2></div>
 				<OrientationFilter title="Orientation" />
 				<CheckboxListFilter title="Size" items={this.sizes}/>
 				<RatingFilter title="Customer Rating" items={this.ratings}/>
