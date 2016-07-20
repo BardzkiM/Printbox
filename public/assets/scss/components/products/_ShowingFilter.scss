@@ -1,0 +1,30 @@
+.showing-filter {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+
+  .item {
+    position: relative;
+    font-size: 15px;
+    margin: 0 2px;
+    border: 1px solid $color-grey;
+    padding: 0 7px;
+    padding-right: 20px;
+    display: inline-block;
+    color: $color-grey;
+    width: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .icon {
+      padding-left: 5px;
+      position: absolute;
+      bottom: 4px;
+      display: inline-block;
+      color: #000;
+      font-size: 8px;
+    }
+  }
+}

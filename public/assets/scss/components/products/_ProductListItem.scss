@@ -4,6 +4,7 @@
 
   &:hover {
     box-shadow: inset 0 0 0 3px $color-hover;
+    cursor: pointer;
   }
 
   .item-image {

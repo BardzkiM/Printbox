@@ -14,13 +14,17 @@
         display: inline-block;
         font-size: 14px;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .number {
       display: inline-block;
       width: 20%;
       text-align: right;
-
+      color: $color-grey;
     }
   }
 }

@@ -17,10 +17,6 @@
     display: none;
     background-color: white;
 
-    &:hover {
-      background-color: $color-hover;
-    }
-
     &:last-child {
       border-bottom: 0;
     }
@@ -31,9 +27,13 @@
 
     &.is-expanded {
       display: flex;
-
+      color: $font-color;
+      &:hover {
+        background-color: $color-hover;
+      }
       &.is-selected {
         display: none;
+
       }
     }
   }

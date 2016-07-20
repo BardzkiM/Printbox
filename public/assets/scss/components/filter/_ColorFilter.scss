@@ -8,6 +8,10 @@
       width: 100%;
       background: white;
       border: 1px solid $color-grey;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .color-indicator {
@@ -21,6 +25,10 @@
       margin: 0;
       padding: 0;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       &:last-child {
         position: relative;
 
@@ -33,6 +41,7 @@
           content: '\E80B';
         }
       }
+
       &.is-active {
         width: 34px;
         height: 34px;
@@ -46,7 +55,6 @@
           font-size: 30px;
           left: calc(50% - 10px);
           top: calc(50% - 15px);
-
           color: #FFF;
         }
       }

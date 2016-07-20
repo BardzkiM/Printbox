@@ -1,0 +1,51 @@
+.menu-bottom-main {
+  width: auto;
+  height: auto;
+  float: none;
+  overflow: hidden;
+  margin: 0 15px;
+
+  .bottom-submenu {
+    display: inline-block;
+    height: auto;
+  }
+
+  .newsletter {
+    display: inline-block;
+    width: 190px;
+    height: auto;
+
+    .newsletter-title {
+      font-size: 20px;
+    }
+
+    .newsletter-content {
+      color: $color-grey;
+      font-size: 16px;
+    }
+
+    .newsletter-input {
+      width: 180px;
+      margin: 5px;
+      margin-top: 15px;
+      padding: 5px;
+      display: inline-block;
+      border: 1px solid $color-grey;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .newsletter-subscribe {
+      width: 180px;
+      margin: 5px;
+      padding: 5px;
+      background: $color-hover;
+      color: #FFF;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  }
+
+}

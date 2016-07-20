@@ -37,7 +37,6 @@ export default class DropdownList extends React.Component {
 		for (let i = 0; i < this.items.length; i++) {
 			let tab = this.items[i];
 			if (item === tab.props.children) {
-				// tab.addClass(tabs.states.active);
 				this.selectedTab = i;
 				break;
 			}

@@ -1,6 +1,7 @@
 import React from "react";
 
 export default class ProductListItem extends React.Component {
+
 	constructor(props) {
 		super(props)
 	}
@@ -26,7 +27,7 @@ export default class ProductListItem extends React.Component {
 
 	getHeartClassName() {
 		let className = 'heart icon-heart';
-		className += this.props.favourite ? ' full-heart': ' empty-heart';
+		className += this.props.favourite ? ' full-heart' : ' empty-heart';
 		return className;
 	}
 

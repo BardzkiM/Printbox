@@ -1,9 +1,7 @@
 import React from "react";
 
 export default class BaseFilterComponent extends React.Component {
-
-
-
+	
 	constructor(props) {
 		super(props);
 		this.class_name = 'base-filter-component ';

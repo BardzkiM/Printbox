@@ -6,6 +6,12 @@ float: left;
     float: left;
     position:relative;
 
+
+    &:hover {
+      cursor: pointer;
+      color: $color-hover;
+    }
+
     &::before {
       content: '';
       height: 50%;
@@ -13,7 +19,7 @@ float: left;
       left: 0;
       display: block;
       position: absolute;
-      border-left: 1px solid black;
+      border-left: 1px solid $border-color;
     }
 
 
@@ -25,7 +31,7 @@ float: left;
         right: 0;
         display: block;
         position: absolute;
-        border-left: 1px solid black;
+        border-left: 1px solid $border-color;
       }
     }
     &.dropdown {
